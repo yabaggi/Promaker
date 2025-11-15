@@ -381,15 +381,17 @@ document.addEventListener('DOMContentLoaded', () => {
     generatePromptBtn.addEventListener('click', generatePrompt);
     clearAllBtn.addEventListener('click', clearAll);
     copyPromptBtn.addEventListener('click', () => navigator.clipboard.writeText(promptTextarea.value));
-    downloadPromptBtn.addEventListener('click', () => {
-        const blob = new Blob([promptTextarea.value], { type: 'text/plain' });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'website-prompt.txt';
-        a.click();
-        URL.revokeObjectURL(url);
-    });
+    if (downloadPromptBtn) {
+        downloadPromptBtn.addEventListener('click', () => {
+            const blob = new Blob([promptTextarea.value], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'website-prompt.txt';
+            a.click();
+            URL.revokeObjectURL(url);
+        });
+    }
 
     tryPromptBtn.addEventListener('click', () => {
         navigator.clipboard.writeText(promptTextarea.value);

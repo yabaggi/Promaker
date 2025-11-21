@@ -28,6 +28,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const tryPromptBtn = document.getElementById('try-prompt-btn');
     const aiToolsModal = document.getElementById('ai-tools-modal');
     const closeModalBtn = document.getElementById('close-modal-btn');
+    const aiToolsGrid = document.querySelector('.ai-tools-grid');
+
+    function renderAiTools(aiTools) {
+        if (!aiToolsGrid) return;
+        aiToolsGrid.innerHTML = '';
+        aiTools.forEach(tool => {
+            const toolCard = document.createElement('div');
+            toolCard.className = 'ai-tool-card';
+            toolCard.innerHTML = `
+                <h3>${tool.name}</h3>
+                <p>${tool.description}</p>
+                <a href="${tool.url}" target="_blank" class="ai-tool-link">Try ${tool.name}</a>
+            `;
+            aiToolsGrid.appendChild(toolCard);
+        });
+    }
 
     function renderTemplates() {
         templatesContainer.innerHTML = '';
@@ -421,6 +437,9 @@ document.addEventListener('DOMContentLoaded', () => {
             updateSelectedComponentsUI();
             setupSidebarTabs();
             setupPreview();
+            if (data.aiTools) {
+                renderAiTools(data.aiTools);
+            }
         })
         .catch(error => console.error('Error loading component data:', error));
 });

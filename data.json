@@ -1,4 +1,26 @@
 {
+    "aiTools": [
+        {
+            "name": "Gemini",
+            "description": "A powerful, versatile AI from Google for a wide range of development tasks.",
+            "url": "https://gemini.google.com/"
+        },
+        {
+            "name": "Blink",
+            "description": "An AI-powered platform for creating web apps and internal tools from prompts.",
+            "url": "https://blink.co/"
+        },
+        {
+            "name": "Lovable",
+            "description": "An AI tool that helps you build and maintain your product's frontend with ease.",
+            "url": "https://lovable.ai/"
+        },
+        {
+            "name": "testingLe",
+            "description": "An AI tool that hel>",
+            "url": "https://lovable.ai/"
+      }
+    ],
     "componentCategories": {
         "general": {
             "title": "General App/Webpage Setup",

@@ -1,26 +1,57 @@
 {
-    "aiTools": [
-        {
-            "name": "Gemini",
-            "description": "A powerful, versatile AI from Google for a wide range of development tasks.",
-            "url": "https://gemini.google.com/"
-        },
-        {
-            "name": "Blink",
-            "description": "An AI-powered platform for creating web apps and internal tools from prompts.",
-            "url": "https://blink.co/"
-        },
-        {
-            "name": "Lovable",
-            "description": "An AI tool that helps you build and maintain your product's frontend with ease.",
-            "url": "https://lovable.ai/"
-        },
-        {
-            "name": "testingLe",
-            "description": "An AI tool that hel>",
-            "url": "https://lovable.ai/"
-      }
-    ],
+  "aiTools": [
+    {
+      "name": "Gemini",
+      "description": "A powerful, versatile AI from Google for a wide range of development tasks.",
+      "url": "https://gemini.google.com/"
+    },
+    {
+      "name": "Blink",
+      "description": "An AI-powered platform for creating web apps and internal tools from prompts.",
+      "url": "https://blink.co/"
+    },
+    {
+      "name": "Lovable",
+      "description": "An AI tool that helps you build and maintain your product's frontend with ease.",
+      "url": "https://lovable.ai/"
+    },
+    {
+      "name": "Tabnine",
+      "description": "AI-powered code completion tool supporting over 25 programming languages with natural language processing.",
+      "url": "https://www.tabnine.com/"
+    },
+    {
+      "name": "Amazon CodeWhisperer",
+      "description": "AI coding companion integrated in IDEs providing real-time code generation and security-focused suggestions.",
+      "url": "https://aws.amazon.com/codewhisperer/"
+    },
+    {
+      "name": "Claude",
+      "description": "Advanced AI assistant focusing on natural language understanding and safe AI interaction, supporting coding and development workflows.",
+      "url": "https://www.anthropic.com/claude"
+    },
+    {
+      "name": "Google AI Studio",
+      "description": "Comprehensive AI and machine learning platform for building, training, and deploying ML models supporting development workflows.",
+      "url": "https://ai.google/studio/"
+    },
+    {
+      "name": "Perplexity AI",
+      "description": "Next-gen AI assistant focused on accurate information retrieval and conversational assistance to enhance developer research and productivity.",
+      "url": "https://www.perplexity.ai/"
+    },
+    {
+      "name": "GitHub Copilot",
+      "description": "Context-aware AI code completion tool integrated in IDEs to boost frontend and full-stack coding speed.",
+      "url": "https://github.com/features/copilot"
+    },
+    {
+      "name": "Vercel v0",
+      "description": "AI-powered prompt-based UI generator turning text prompts into production-ready React components.",
+      "url": "https://vercel.com/v0"
+    }
+  ],
+
     "componentCategories": {
         "general": {
             "title": "General App/Webpage Setup",
@@ -152,3 +183,4 @@
         }
     }
 }
+

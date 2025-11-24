@@ -410,7 +410,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     tryPromptBtn.addEventListener('click', () => {
-        navigator.clipboard.writeText(promptTextarea.value);
         aiToolsModal.style.display = 'flex';
     });
 
